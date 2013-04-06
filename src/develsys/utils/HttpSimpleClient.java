@@ -16,7 +16,7 @@ import java.net.UnknownHostException;
 
 /**
  *
- * @author hmariod me
+ * @author hmariod es
  */
 public class HttpSimpleClient {
     private String host;
