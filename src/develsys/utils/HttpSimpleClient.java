@@ -84,6 +84,7 @@ public class HttpSimpleClient {
             out.close(); 
             in.close();
             socket.close();
+            if(body.length() >= 1){body = body.substring(0, body.length()-1);}; //Exclude last \n
             resultCode = Integer.parseInt((headers[0].split("\\s")[1]),10);
             
         } catch (UnknownHostException | SocketTimeoutException ex) {
