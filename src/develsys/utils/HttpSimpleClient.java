@@ -52,7 +52,6 @@ public class HttpSimpleClient {
     public boolean get(String url){
         try {
             Socket socket = new Socket();
-            boolean b;
             socket.connect(new InetSocketAddress(host, port), connectionTimeout);
 
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(), "UTF8"));
